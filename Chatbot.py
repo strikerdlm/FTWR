@@ -18,7 +18,11 @@ def query(api_url, payload):
 api_urls = [
     os.environ.get('API_URL_1'),
     os.environ.get('API_URL_2'),
-    # ... add more as needed
+    os.environ.get('API_URL_3'),
+    os.environ.get('API_URL_4'),
+    os.environ.get('API_URL_5'),
+    os.environ.get('API_URL_6'),
+    os.environ.get('API_URL_7'),
 ]
 
 # Streamlit Interface
