@@ -1,14 +1,14 @@
 import streamlit as st
 from langchain.llms import OpenAI
 
-st.title("🦜🔗 Langchain Quickstart App")
+st.title("Langchain knowledge")
 
 with st.sidebar:
     openai_api_key = st.text_input("OpenAI API Key", type="password")
 
 
 def generate_response(input_text):
-    llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key)
+    llm = OpenAI(temperature=0.1, openai_api_key=openai_api_key)
     st.info(llm(input_text))
 
 
